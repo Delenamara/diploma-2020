@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+div.index {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.form {
+    text-align: center;
+    display: block;
+}
+
+.text-input {
+    width: 500px;
+    display: inline-block;
+    text-align: center;
+}
+
+.generated-palette  {
+    display: flex;
+    border-color: black;
+}
+
+.color-in-palette {
+    width: 60px;
+    height: 60px;
+}
+
+.form-palettes {
+    text-align: center;
+}
+
+.palette {
+    padding: 10px;
+}
+
+.btn-dark {
+    margin: 20px 0;
+}
+
+.labl {
+    display: flex;
+    width: 400px;
+}
+.labl > input{ /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+}
+.labl > input + div{ /* DIV STYLES */
+    cursor:pointer;
+    border:5px solid transparent;
+}
+.labl > input:checked + div{ /* (RADIO CHECKED) DIV STYLES */
+    background-color: #569ef0;
+    border: 3px solid #569ef0;
+}
+
+.container {
+    display: flex;
+}
+
+.prototype {
+    display: block;
+    text-align: center;
+}

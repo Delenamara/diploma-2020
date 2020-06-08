@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Semantics</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <h1>О чем ваш продукт?</h1>
+    <div class="form">
+    <form class="text-input" method="post" >
+        <div class="form-group">
+            <label for="exampleInputEmail1">Введите слово или фразу</label>
+            <input type="text" class="form-control" name="text_input" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <button type="submit" class="btn btn-dark">Подтвердить</button>
+    </form>
+    </div>
+</body>
+</html>
